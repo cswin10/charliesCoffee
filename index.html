@@ -3,10 +3,141 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Charlie's Coffee</title>
+		<meta
+			name="description"
+			content="The Daily Grind: A coffee shop offering a cozy environment with ethically sourced coffee beans, specialty drinks, and a relaxing atmosphere."
+		/>
+
+		<title>The Daily Grind Cafe</title>
+		<link
+			rel="icon"
+			href="images/android-chrome-192x192.png"
+			type="image/png"
+		/>
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
 	</head>
 	<body>
+		<header>
+			<div class="logo">
+				<img src="images/logo2.png" alt="The daily grind cafe logo" />
+			</div>
+			<div class="menu-toggle" aria-label="Toggle Navigation Menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="links" id="nav-links">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="menu.html">MENU</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+					<li><a href="about.html">OUR STORY</a></li>
+					<li><a href="reservation.html">RESERVATIONS</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="hero-section">
+			<img src="images/main.webp" alt="Hero section image of the coffee shop" />
+		</div>
+		<div class="brief-about">
+			<article>
+				<h1>The Daily Grind</h1>
+				<p>
+					Blue Haven Café is more than just a coffee shop—it’s a space inspired
+					by the rich coffee culture of Colombia and designed to bring people
+					together. With ethically sourced beans, a menu of specialty drinks,
+					and a thoughtfully crafted atmosphere, it’s a place where you can
+					focus, connect, and recharge. Whether you’re enjoying a quiet moment
+					with a single-origin pour-over or catching up with friends over
+					pastries, Blue Haven offers the perfect balance of warmth and
+					modernity.
+				</p>
+				<div class="cta">
+					<h2>Visit Us Today</h2>
+					<p>
+						Experience the welcoming atmosphere and world-renowned coffee here
+						at the Daily Grind! Perfect for catching up with friends, or getting
+						stuck into some work.
+					</p>
+					<a href="contact.html" class="cta-button"
+						>Get Directions <i class="fa-solid fa-diamond-turn-right"></i
+					></a>
+				</div>
+			</article>
+			<div class="image-container">
+				<img src="images/outside.webp" alt="Outside Seating Area" />
+				<div class="testimonials">
+					<div class="test">
+						<p><i>Sophia R. - Freelancer.</i></p>
+						"The Daily Grind is my favorite spot to work. Calm, cozy, with
+						amazing coffee. Perfect for focus and inspiration."
+					</div>
+					<div class="test">
+						<p><i>James T. - University Student.</i></p>
+						"Best study spot! Quiet, comfortable, with great coffee and outlets.
+						I can concentrate here for hours without distractions."
+					</div>
+					<div class="test">
+						<p><i>Emma G. - Stay-at-home Parent.</i></p>
+						"I love The Daily Grind! It’s perfect for both relaxing alone or
+						catching up with friends. Plus, their chai’s amazing!"
+					</div>
+					<div class="test">
+						<p><i>Mark P. Local Artist</i></p>
+						"The Daily Grind is inspiring! The design and atmosphere fuel my
+						creativity, and the coffee keeps me going all day."
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer-container">
+				<div class="footer-logo">
+					<img src="images/logo2.png" alt="Charlie's Coffee Logo" />
+				</div>
+				<div class="footer-links">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="menu.html">MENU</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+						<li><a href="about.html">OUR STORY</a></li>
+						<li><a href="reservation.html">RESERVATIONS</a></li>
+					</ul>
+				</div>
+				<div class="footer-social">
+					<a href="https://www.instagram.com/" target="_blank"
+						><i class="fab fa-instagram"></i
+					></a>
+					<a href="https://www.facebook.com/" target="_blank"
+						><i class="fab fa-facebook-f"></i
+					></a>
+					<a href="https://twitter.com/" target="_blank"
+						><i class="fab fa-twitter"></i
+					></a>
+				</div>
+				<div class="footer-contact">
+					<p>123 Coffee Street, Coffee City, CO 12345</p>
+					<p>Email: info@thedailygrind.com</p>
+					<p>Phone: (123) 456-7890</p>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2024 The Daily Grind. All rights reserved.</p>
+			</div>
+		</footer>
+		<script src="contact.js"></script>
+		<script src="server.js"></script>
 		<script src="script.js"></script>
 	</body>
 </html>
