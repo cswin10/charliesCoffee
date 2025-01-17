@@ -1,107 +1,109 @@
+
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="The Daily Grind: A coffee shop offering a cozy environment with ethically sourced coffee beans, specialty drinks, and a relaxing atmosphere."
-		/>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="The Daily Grind: A coffee shop offering a cozy environment with ethically sourced coffee beans, specialty drinks, and a relaxing atmosphere." />
+        <meta name="keywords" content="coffee, cafe, coffee shop, specialty drinks, cozy environment" />
+        <meta name="author" content="Charlie's Coffee" />
 
-		<title>The Daily Grind Cafe</title>
-		<link rel="stylesheet" href="styles.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			rel="icon"
-			href="images/android-chrome-192x192.png"
-			type="image/png"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-		/>
-	</head>
-	<body>
-		<header>
-			<div class="logo">
-				<img src="images/logo2.png" alt="logo image" />
-			</div>
-			<div class="menu-toggle" id="menu-toggle">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<div class="links" id="nav-links">
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="menu.html">MENU</a></li>
-					<li><a href="contact.html">CONTACT</a></li>
-					<li><a href="about.html">OUR STORY</a></li>
-					<li><a href="reservation.html">RESERVATIONS</a></li>
-				</ul>
-			</div>
-		</header>
-		<!-- Contact Section -->
-		<section class="contact-section">
-			<div class="contact-container">
-				<h1>Contact Us</h1>
-				<p>
-					We'd love to hear from you! Whether you have a question or feedback,
-					feel free to reach out.
-				</p>
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="The Daily Grind Cafe" />
+        <meta property="og:description" content="A coffee shop offering a cozy environment with ethically sourced coffee beans, specialty drinks, and a relaxing atmosphere." />
+        <meta property="og:image" content="images/og-image.png" />
+        <meta property="og:url" content="https://www.thedailygrindcafe.com" />
+        <meta property="og:type" content="website" />
 
-				<!-- Contact Form -->
-				<form
-					class="contact-form"
-					action="https://formsubmit.co/crcswinhoe@gmail.com"
-					method="POST"
-					id="contact-form"
-				>
-					<input
-						type="hidden"
-						name="_subject"
-						value="New Message from Contact Form"
-					/>
-					<input type="hidden" name="_next" value="" />
-					<input type="hidden" name="_captcha" value="false" />
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="The Daily Grind Cafe" />
+        <meta name="twitter:description" content="A coffee shop offering a cozy environment with ethically sourced coffee beans, specialty drinks, and a relaxing atmosphere." />
+        <meta name="twitter:image" content="images/twitter-image.png" />
 
-					<label for="name">Full Name</label>
-					<input type="text" id="name" name="name" required />
+        <title>The Daily Grind Cafe</title>
+        <link rel="icon" href="images/android-chrome-192x192.png" type="image/png" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo2.png" alt="The daily grind cafe logo" />
+            </div>
+            <div class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu" title="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="links" id="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="about.html">OUR STORY</a></li>
+                    <li><a href="reservation.html">RESERVATIONS</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <h1>Contact Us</h1>
+                <p>
+                    We'd love to hear from you! Whether you have a question or feedback,
+                    feel free to reach out.
+                </p>
 
-					<label for="email">Email Address</label>
-					<input type="email" id="email" name="email" required />
+                <!-- Contact Form -->
+                <form
+                    class="contact-form"
+                    action="https://formsubmit.co/crcswinhoe@gmail.com"
+                    method="POST"
+                >
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your Full Name"
+                            required
+                        />
+                    </div>
 
-					<label for="message">Message</label>
-					<textarea id="message" name="message" rows="6" required></textarea>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Your Email Address"
+                            required
+                        />
+                    </div>
 
-					<button type="submit" class="submit-btn">Send Message</button>
-				</form>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Your Message"
+                            required
+                        ></textarea>
+                    </div>
 
-				<!-- Contact Info -->
-				<div class="contact-info">
-					<h2>Visit Us</h2>
-					<p>123 Coffee Street, Coffee City, CO 12345</p>
-					<p>Email: info@thedailygrind.com</p>
-					<p>Phone: (123) 456-7890</p>
-
-					<div class="social-links">
-						<a href="https://www.instagram.com/" target="_blank"
-							><i class="fab fa-instagram"></i> Instagram</a
-						>
-						<a href="https://www.facebook.com/" target="_blank"
-							><i class="fab fa-facebook-f"></i> Facebook</a
-						>
-						<a href="https://twitter.com/" target="_blank"
-							><i class="fab fa-twitter"></i> Twitter</a
-						>
-					</div>
-				</div>
-
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
+		
+		
 				<!-- Google Map -->
 				<div class="map">
 					<iframe
@@ -117,40 +119,34 @@
 		</section>
 
 		<footer>
-			<div class="footer-container">
-				<div class="footer-logo">
-					<img src="images/logo2.png" alt="Charlie's Coffee Logo" />
-				</div>
-				<div class="footer-links">
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="menu.html">MENU</a></li>
-						<li><a href="contact.html">CONTACT</a></li>
-						<li><a href="about.html">OUR STORY</a></li>
-						<li><a href="reservation.html">RESERVATIONS</a></li>
-					</ul>
-				</div>
-				<div class="footer-social">
-					<a href="https://www.instagram.com/" target="_blank"
-						><i class="fab fa-instagram"></i
-					></a>
-					<a href="https://www.facebook.com/" target="_blank"
-						><i class="fab fa-facebook-f"></i
-					></a>
-					<a href="https://twitter.com/" target="_blank"
-						><i class="fab fa-twitter"></i
-					></a>
-				</div>
-				<div class="footer-contact">
-					<p>123 Coffee Street, Coffee City, CO 12345</p>
-					<p>Email: info@thedailygrind.com</p>
-					<p>Phone: (123) 456-7890</p>
-				</div>
-			</div>
-			<div class="footer-bottom">
-				<p>&copy; 2024 The Daily Grind. All rights reserved.</p>
-			</div>
-		</footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="images/logo2.png" alt="Charlie's Coffee Logo" />
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="about.html">OUR STORY</a></li>
+                        <li><a href="reservation.html">RESERVATIONS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="footer-contact">
+                    <p>123 Coffee Street, Coffee City, CO 12345</p>
+                    <p>Email: info@thedailygrind.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Daily Grind. All rights reserved.</p>
+            </div>
+        </footer>
 		<script src="contact.js?v=1.0"></script>
 		<script src="server.js"></script>
 		<script src="script.js"></script>

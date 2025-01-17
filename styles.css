@@ -292,6 +292,11 @@ footer {
 	transform: translateY(-2px);
 }
 
+.footer-contact {
+	color: #fff;
+	padding: 20px;
+}
+
 .footer-contact p {
 	margin: 5px 0;
 	padding: 20px;
@@ -546,7 +551,7 @@ form textarea:focus {
 }
 
 form button {
-	background-color: var(--blue);
+	background-color: var(--darker-tan);
 	padding: 12px;
 	color: #fff;
 	font-weight: 600;
@@ -558,10 +563,55 @@ form button {
 }
 
 form button:hover {
-	background-color: var(--darker-tan);
+	background-color: var(--blue);
 }
 
-/*Responsive design*/
+
+
+/* Form styles */
+/* Ensure cursor changes to pointer for input fields and their icons */
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+select {
+    cursor: pointer;
+    -webkit-appearance: none; /* Remove default styling for better control */
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    padding-right: 0px; /* Adjust padding to make space for the icon */
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+select::-ms-expand {
+    cursor: pointer;
+}
+
+/* Restore default arrow for select element */
+select {
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+    appearance: menulist;
+}
+
+/* Add custom icon styling if needed */
+input[type="date"]::after,
+input[type="time"]::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('path/to/icon.png') no-repeat center center;
+    background-size: contain;
+    pointer-events: none; /* Ensure the icon doesn't block the cursor change */
+}
 
 @media (max-width: 960px) {
 	.testimonials {
@@ -573,6 +623,24 @@ form button:hover {
 		position: absolute;
 		left: 90px;
 		top: 50px;
+	}
+	footer {
+		display: flex;
+		flex-direction: column;
+	}
+	.footer-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 0;
+	}
+
+	.footer-contact {
+		align-self: center;
+	}
+
+	.footer-logo {
+		height: 100px;
+		margin-bottom: 15px;
 	}
 }
 
