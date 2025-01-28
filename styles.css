@@ -41,6 +41,11 @@ header {
 
 .logo img {
 	height: 100%;
+	transition: 0.2s ease-in-out transform;
+}
+
+.logo img:hover {
+	transform: scale(1.05);
 }
 header ul {
 	display: flex;
@@ -90,7 +95,10 @@ header ul li a:active {
 	display: none;
 	flex-direction: column;
 	cursor: pointer;
+	transition: transform 0.3s ease; /* Add transition for smooth scaling */
+
 }
+
 
 .menu-toggle span {
 	background: #f0f0f0;
@@ -99,6 +107,11 @@ header ul li a:active {
 	margin: 4px 0;
 	transition: 0.3s;
 }
+
+.menu-toggle:hover {
+    transform: scale(1.1); /* Scale up the menu */
+}
+
 
 /* Hide Navigation Links by Default */
 .links {
@@ -246,9 +259,14 @@ footer {
 	flex-wrap: wrap;
 }
 
-.footer-logo img {
+.footer-logo img  {
 	height: 150px;
 	object-fit: contain;
+	transition: 0.2s ease-in-out transform;
+}
+
+.footer-logo img:hover {
+	transform: scale(1.05)
 }
 
 .footer-links ul {
