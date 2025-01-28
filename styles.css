@@ -631,7 +631,7 @@ input[type="time"]::after {
     pointer-events: none; /* Ensure the icon doesn't block the cursor change */
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1010px) {
 	.testimonials {
 		display: flex;
 		flex-direction: column;
